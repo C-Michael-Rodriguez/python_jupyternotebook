@@ -5,7 +5,24 @@ date:   2024-04-07 17:57:53 -0700
 categories: jekyll update
 ---
 <!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Pop-up</title>
 
+    <!-- Your other content here -->
+
+    <script>
+        function openYouTubePopup() {
+            // Replace 'VIDEO_ID' with the actual YouTube video ID
+            const videoId = /Opxhh9Oh3rg?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1';
+            const url = `https://www.youtube.com/embed/${videoId}`;
+            const features = 'width=800,height=600,resizable=yes,scrollbars=yes';
+
+           const youtubePopup =  window.open(url, 'YouTubePopup', features);
+        }
+
+        // Call the function when the page loads
+        window.onload = openYouTubePopup;
+    </script>
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
