@@ -17,11 +17,11 @@ categories: jekyll update
             const url = `https://www.youtube.com/embed/${videoId}`;
             const features = 'width=800,height=600,resizable=yes,scrollbars=yes';
 
-           const youtubePopup =  window.open(url, 'YouTubePopup', features);
+           window.open(url, 'YouTubePopup', features);
         }
 
         // Call the function when the page loads
-        window.onload = openYouTubePopup;
+        const youtubePopup =  window.onload = openYouTubePopup;
     </script>
 <html lang="en">
 <head><meta charset="utf-8"/>
