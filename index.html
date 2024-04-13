@@ -6,7 +6,23 @@ categories: jekyll update
 ---
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en">    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Your other content here -->
+
+    <script>
+        function openYouTubePopup() {
+            // Replace 'VIDEO_ID' with the actual YouTube video ID
+            const videoId = 'VIDEO_ID';
+            const url = `https://www.youtube.com/embed/${videoId}`;
+            const features = 'width=800,height=600,resizable=yes,scrollbars=yes';
+
+            window.open(url, 'YouTubePopup', features);
+        }
+
+        // Call the function when the page loads
+        window.onload = openYouTubePopup;
+    </script>
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>20240412</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
