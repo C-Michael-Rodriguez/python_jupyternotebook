@@ -28,6 +28,28 @@ categories: jekyll update
 
     }
 };
+
+    <!-- Example anchor link -->
+
+mRD0-GxqHVo?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1
+    <!-- JavaScript function to execute -->
+    <script>
+            function openYouTubePopup2() {
+            // Replace 'VIDEO_ID' with the actual YouTube video ID
+            const videoId = 'mRD0-GxqHVo?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1';
+            const url = `https://www.youtube.com/embed/${videoId}`;
+            const features = 'width=800,height=600,resizable=yes,scrollbars=yes';
+
+            window.open(url, 'YouTubePopup', features);
+        }
+        function handleLinkClick() {
+            // Your custom JavaScript code here
+            openYouTubePopup2()
+            alert("Anchor link clicked! Execute your ACH-related logic.");
+            // You can replace the alert with any desired action.
+        }
+    </script>
+        
     </script>
 <html lang="en">
 <head><meta charset="utf-8"/>
@@ -7504,6 +7526,7 @@ main {
 // Example usage:
 openNewYouTubePopup('mRD0-GxqHVo?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1');
 window.onload = openNewYouTubePopup;
+        <a href="#" onclick="handleLinkClick()">Click me!</a>
 </script>
 <section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1fde4596-6714-4845-a86f-12e832c8b9e7">
