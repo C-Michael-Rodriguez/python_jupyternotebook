@@ -8439,7 +8439,21 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#heatwaves</span>
+<div class="highlight hl-ipython3"><pre><span></span>
+    <span class="c1">%%html
+    function openNewYouTubePopup(videoId) {
+    // Close the previous pop-up if it exists
+    if (youtubePopup && !youtubePopup.closed) {
+        youtubePopup.close();
+    }
+
+    // Open the new pop-up
+    youtubePopup = window.open(`https://www.youtube.com/embed/${videoId}`, 'YouTubePopup', 'width=800,height=600,resizable=yes,scrollbars=yes');
+}
+
+// Example usage:
+openNewYouTubePopup('mRD0-GxqHVo?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1');
+</span>
 </pre></div>
 </div>
 </div>
