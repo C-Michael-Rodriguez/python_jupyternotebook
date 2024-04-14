@@ -7479,7 +7479,22 @@ main {
 </div>
 </div>
 </div>
-</div></section></section><section><section>
+</div></section></section>
+<script>
+    function openNewYouTubePopup(videoId) {
+    // Close the previous pop-up if it exists
+    if (youtubePopup && !youtubePopup.closed) {
+        youtubePopup.close();
+    }
+
+    // Open the new pop-up
+    youtubePopup = window.open(`https://www.youtube.com/embed/${videoId}`, 'YouTubePopup', 'width=800,height=600,resizable=yes,scrollbars=yes');
+}
+
+// Example usage:
+openNewYouTubePopup('mRD0-GxqHVo?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1');
+</script>
+<section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1fde4596-6714-4845-a86f-12e832c8b9e7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
