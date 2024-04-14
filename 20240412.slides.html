@@ -7,18 +7,18 @@ categories: jekyll update
 <!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>function openNewYouTubePopup(videoId) {
-    // Close the previous pop-up if it exists
-    if (youtubePopup && !youtubePopup.closed) {
-        youtubePopup.close();
-    }
+    <script>
+        function openYouTubePopup() {
+            // Replace 'VIDEO_ID' with the actual YouTube video ID
+            const videoId = 'Opxhh9Oh3rg?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1';
+            const url = `https://www.youtube.com/embed/${videoId}`;
+            const features = 'width=800,height=600,resizable=yes,scrollbars=yes';
 
-    // Open the new pop-up
-    youtubePopup = window.open(`https://www.youtube.com/embed/${videoId}`, 'YouTubePopup', 'width=800,height=600,resizable=yes,scrollbars=yes');
-}
+            window.open(url, 'YouTubePopup', features);
+        }
 
-// Example usage:
-openNewYouTubePopup('Opxhh9Oh3rg?si=KY4Rj5W1MYjhstSv&autoplay=1;&amp;controls=1');
+        // Call the function when the page loads
+        window.onload = openYouTubePopup;
     </script>
 <html lang="en">
 <head><meta charset="utf-8"/>
