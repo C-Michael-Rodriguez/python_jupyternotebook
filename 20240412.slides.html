@@ -19,6 +19,15 @@ categories: jekyll update
 
         // Call the function when the page loads
         window.onload = openYouTubePopup;
+
+        window.onbeforeunload = function() {
+    // Your cleanup code here
+    // For example, close the pop-up window
+    if (youtubePopup && !youtubePopup.closed) {
+        youtubePopup.close();
+    window.close()
+    }
+};
     </script>
 <html lang="en">
 <head><meta charset="utf-8"/>
